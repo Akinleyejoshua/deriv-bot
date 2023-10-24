@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  letter-spacing: .5px;
+}
+
+
+header{
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+a{
+  color: rgba(0, 0, 0, 0.479);
+}
+
+.bal{
+  padding: .5rem 1rem;
+  border-radius: 3rem;
+  background-color: rgba(65, 105, 225, 0.05);
+  color: rgba(65, 105, 225, 0.8);
+}
+
+.danger{
+  color: red;
+}
+
+.load{
+  color: royalblue;
+}
+
+.msg{
+  padding: 0 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: .5rem 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  border-radius: 3rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+
+}
+
+main{
+  padding: 0 1rem;
+}
+
+button{
+  padding: .5rem 1rem;
+  border: 1px solid transparent;
+  background-color: royalblue;
+  color: white;
+  border-radius: 3rem;
+  cursor: pointer;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+
+button:hover{
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+button.sell-btn{
+  background-color: rgb(225, 65, 65);
+  color: rgb(255, 255, 255);
+}
+
+button.auto-btn{
+  background-color: rgb(65, 225, 105);
+  color: rgb(255, 255, 255);
+}
+
+.space{
+  padding: .25rem;
+}
+
+.dim{
+  opacity: .8;
+}
+
+.row{
+  display: flex;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: .5rem;
+}
+
+.grid-1{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-gap: .5rem;
+}
+
+.inputs, .actions{
+  height: max-content;  
+}
+
+input{
+  border: none;
+  background-color: rgba(70, 108, 235, 0.05);
+  color: royalblue;
+  padding: .5rem 1rem;
+  border: rgba(65, 105, 225, 0) solid 2px;
+  border-radius: 3rem;
+}
+
+input::placeholder{
+  color: rgba(65, 105, 225, 0.5);
+}
+
+input:not(:last-child){
+  margin-bottom: .5rem;
+}
+
+.buy-sell{
+  justify-content: center;
+}
+
+.buy-sell button{
+  width: 100%;
+}
+
+.buy-sell button:first-child{
+  margin-right: .5rem;
+}
+
+.ticks p{
+  padding: .5rem 1rem;
+  background-color: royalblue;
+  color: white;
+  border-radius: 1rem;
+}
